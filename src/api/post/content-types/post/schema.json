@@ -30,6 +30,12 @@
     "slug": {
       "type": "uid",
       "targetField": "title"
+    },
+    "post_category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::post-category.post-category",
+      "inversedBy": "posts"
     }
   }
 }
